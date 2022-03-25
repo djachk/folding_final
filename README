@@ -1,0 +1,21 @@
+We tried to compare Material Point Method (MPM, using Taichi package to accelerate execution) to Finite Element Method (FEM) as a simulation tool to model continuum materials from a mechanical point of view.
+
+This is the content of the directories:
+
+Comment_mpm-99:
+This simple program written by the Taïchi team implements MPM.
+
+Comparison_beam_MPM_Abaqus_FreeFem:
+We compare three modeling methods on a simple beam configuration: MPM, FreeFem (FEM) and Abaqus (FEM).
+The files with extension .res or .temoin are data files produced for various values of E, nu and g.
+The notebook reads the data files and plots the results.
+
+Comparison_box_MPM_Abaqus:
+The same thing is done with MPM and Abaqus only, for a box-shaped object.
+
+Cortical_folding:
+Cortex folding is simulated with MPM and results are compared to those obtained in the original article from P V Bayley and al. 
+
+Optimal_density_of_particles:
+Several densities of particles are used to model using MPM the dynamics of a box-shaped object supporting its own weight.
+The minimum density to reach asymptotic steady state is deduced. 
